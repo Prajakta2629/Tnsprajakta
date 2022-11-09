@@ -8,9 +8,9 @@ public class CurrentAcc extends BankAcc {
 		this.creditLimit = creditLimit;
 	}
  
-	public void withdraw(float charges)
+	public void withdraw(float accBal)
 	{
-		System.out.println("Account No:"+this.getAccNo()+","+"Account name:"+this.getAccNm()+"," + "Account Balance is:"+(getAccBal()+creditLimit));
+		System.out.println("Account No:"+this.getAccNo()+","+"\nAccount name:"+this.getAccNm()+"," + "\nAccount Balance is:"+(accBal+ creditLimit));
 	}
 
 	@Override

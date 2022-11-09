@@ -11,7 +11,7 @@ public class MMCurrentAcc extends CurrentAcc {
 
 	@Override
 	public String toString() {
-		return "MMCurrentAcc []";
+		return String.format("MMCurrentAccount [toString()=%s]", super.toString());
 	}
      
 }

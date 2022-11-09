@@ -13,13 +13,13 @@ public class Client {
 		BankFactory s=new MMBankFactory();
 		SavingAcc p=new MMSavingAcc(141414, "Prajakta Karve", 1000, true);
 		CurrentAcc n=new MMCurrentAcc(151515, "Vaibhav Karve", 20000, 10000);
-		
+		System.out.println();
 		System.out.println("Saving Account Details:");
 		p.withdraw(p.getAccBal());
-		
+		System.out.println();
 		System.out.println("Current Account Details:");
 		n.withdraw(n.getAccBal());
-		
+		System.out.println();
 		System.out.println(p);
 		System.out.println(n);
 

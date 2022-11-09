@@ -11,7 +11,7 @@ public  class MMSavingAcc extends SavingAcc{
 
 	@Override
 	public String toString() {
-		return "MMSavingAcc []";
+		return String.format("MMSavingAcc [toString()=%s]",super.toString());
 	}
-
+    
 }

@@ -1,15 +1,18 @@
 package org.tnsindia.framework;
 
-public abstract class SavingAcc extends BankAcc {
+public abstract class SavingAcc extends BankAcc
+{
 	private boolean isSalary;
-	static final private float creditLimit=1000000f;
+	static final private float MINBAL=5000;
+	
 	public SavingAcc(int accNo, String accNm, float accBal, boolean isSalary) {
 		super(accNo, accNm, accBal);
 		this.isSalary = isSalary;
 	}
-	public void withdraw(float charges)
+	public void withdraw(float accBal)
 	{
-		System.out.println("Account No:"+this.getAccNo()+","+"Account name:"+this.getAccNm()+","+"Account Balanceis:"+this.getAccBal());
+		System.out.println("Account No is:"+this.getAccNo()+"\nAccount Name is:"+this.getAccNm()+
+				"\nAccount Balance is:"+accBal);
 	}
 	@Override
 	public String toString() {
